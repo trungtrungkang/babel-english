@@ -5,7 +5,7 @@ Không coi mốc dưới đây là cam kết ngày giao. Chỉ ước lượng s
 ## D0 — Demo ý tưởng (hiện tại)
 
 - [x] Khởi tạo project, hướng dẫn chạy và bộ tài liệu sống.
-- [x] Một bài Speaking từ xem/nghe đến tự trả lời/nộp bài.
+- [x] Sáu bài Speaking từ xem/nghe đến tự trả lời/nộp bài.
 - [x] Thu/nghe lại cục bộ, theo dõi giáo viên/phụ huynh.
 - [x] Sửa bài mẫu, bản nháp, version xuất bản, VI/EN.
 - [ ] Vic và Châu xem demo theo kịch bản; ghi tối thiểu 3 quyết định.

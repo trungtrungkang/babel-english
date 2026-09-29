@@ -18,3 +18,6 @@ These implementation proposals do not replace Vic and Châu’s product approval
 ## New decision template
 
 Record ID/date, context and evidence, alternatives, decision, product/technical/data impact, unknowns, approving owner and review milestone.
+
+
+ADR-011: Expand the demo to six lessons across two units, with a cumulative task after each pair of practice lessons. Store progress, drafts, submissions and feedback by lesson ID. Migrate v1 data to v2 while preserving edited content and recording references. No backend, AI or real video is added.

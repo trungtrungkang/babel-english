@@ -46,3 +46,33 @@ test('content validates URL protocol, mandatory goals and dialogue limits',()=>{
  assert.equal(validateLesson({...seedLesson,objective:{vi:'',en:'goal'}}),'objective');
  assert.equal(validateLesson({...seedLesson,title:' '}),'title');
 });
+
+import { seedLessons, selectLesson, lessonRecord, migrateState, practiceSentence, snapshotCurrent } from '../src/domain.js';
+test('switching lessons preserves independent attempts, submissions, drafts and feedback',()=>{
+ let state=initialState(); state.attempt=newAttempt(state.lesson); state.attempt.step=5;
+ state.submission=createSubmission(state.attempt,{id:'audio-a',size:123,duration:4});
+ state.feedback={mastery:'achieved',comment:'Clear request'}; state.draft={...state.lesson,title:'Draft A'};
+ state=selectLesson(state,seedLessons[1].id);
+ assert.equal(state.submission,null); assert.equal(state.feedback,null); assert.equal(state.draft,null);
+ state.attempt=advanceAttempt(newAttempt(state.lesson));
+ state=selectLesson(state,seedLessons[0].id);
+ assert.equal(state.submission.recordingId,'audio-a'); assert.equal(state.feedback.comment,'Clear request');
+ assert.equal(state.draft.title,'Draft A'); assert.equal(lessonRecord(state,seedLessons[1].id).attempt.step,1);
+ const restored=migrateState(JSON.parse(JSON.stringify(snapshotCurrent(state))));
+ assert.equal(selectLesson(restored,seedLessons[1].id).attempt.step,1);
+});
+test('legacy data retains edited content, progress and audio references when adding lessons',()=>{
+ const old={...initialState(),schemaVersion:1,records:undefined};
+ old.lesson.title='My custom title';old.attempt=newAttempt(old.lesson);old.attempt.step=5;
+ old.submission=createSubmission(old.attempt,{id:'legacy-audio',size:10,duration:2});
+ delete old.lesson.practice;delete old.attempt.lesson.practice;
+ const updated=migrateState(old);
+ assert.equal(updated.schemaVersion,2);assert.equal(updated.lesson.title,'My custom title');
+ assert.equal(updated.submission.recordingId,'legacy-audio');assert.ok(updated.attempt.lesson.practice);
+ assert.equal(selectLesson(updated,seedLessons[5].id).lesson.title,'My favourite day');
+});
+test('all six lessons have valid distinct content, practice choices and bilingual scaffolding',()=>{
+ assert.equal(new Set(seedLessons.map(l=>l.id)).size,6);
+ for(const lesson of seedLessons){assert.equal(validateLesson(lesson),null);assert.ok(lesson.challenge.vi&&lesson.challenge.en&&lesson.focus.vi&&lesson.focus.en);for(const choice of lesson.practice.choices){const sentence=practiceSentence(lesson,choice);assert.ok(sentence.includes(choice));assert.ok(!sentence.includes('{choice}'));}}
+ assert.equal(seedLessons.filter(l=>l.review).length,2);
+});

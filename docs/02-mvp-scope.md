@@ -2,7 +2,7 @@
 
 ## Hai mốc khác nhau
 
-**D0 — MVP demo:** kiểm chứng ý tưởng, luồng học và phản ứng ban đầu. Một thiết bị, một học sinh minh họa, một bài mẫu. Đây là phiên bản hiện tại.
+**D0 — MVP demo:** kiểm chứng ý tưởng, luồng học và phản ứng ban đầu. Một thiết bị, một học sinh minh họa, sáu bài mẫu. Đây là phiên bản hiện tại.
 
 **P1 — MVP pilot:** dùng được với một nhóm học sinh thật có kiểm soát. Cần backend, đăng nhập, phân quyền, lưu trữ riêng tư, học liệu Babel và vận hành giáo viên. Chưa hoàn thành.
 

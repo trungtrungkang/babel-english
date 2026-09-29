@@ -61,3 +61,17 @@ Example target data, not the implemented schema:
 Choose a goal → select an activity template → add materials → preview as a learner → pedagogical review → publish a version → observe difficulties → revise in a new draft.
 
 Assignments and submissions retain the relevant content and rubric versions. New edits must not reinterpret old results.
+
+
+## Expanded sample programme — six lessons
+
+| Unit | Lesson | Goal |
+|---|---|---|
+| Let’s go shopping | 1. At the ice cream shop | Make a polite request |
+| Let’s go shopping | 2. At the fruit market | Include quantities in requests |
+| Let’s go shopping | 3. My little shopping trip | Combine language into 3–4 sentences |
+| My world | 4. Meet my family | Introduce a person and their interests |
+| My world | 5. After school | Describe an activity and ask a follow-up |
+| My world | 6. My favourite day | Connect ideas in a 4–5 sentence talk |
+
+All lessons are open for exploration without score gates. Each has separate progress, a final recording and feedback. Teachers, parents and content editors use the lesson selector above their view. These are proposed sample materials awaiting Babel approval. Babel videos and automated assessment are not included.

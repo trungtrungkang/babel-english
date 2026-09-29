@@ -61,3 +61,17 @@ Ví dụ dữ liệu đích, không phải schema đã triển khai:
 Chọn mục tiêu → chọn mẫu hoạt động → nhập học liệu → xem thử như học sinh → duyệt chuyên môn → xuất bản phiên bản → theo dõi nơi học sinh gặp khó → sửa trong bản nháp mới.
 
 Bài đã giao/bài nộp phải giữ được phiên bản nội dung và rubric tương ứng. Không sửa kết quả cũ theo bài mới.
+
+
+## Chương trình demo mở rộng — 6 bài
+
+| Chủ đề | Bài | Mục tiêu |
+|---|---|---|
+| Đi mua sắm | 1. At the ice cream shop | Yêu cầu lịch sự |
+| Đi mua sắm | 2. At the fruit market | Yêu cầu kèm số lượng |
+| Đi mua sắm | 3. My little shopping trip | Tổng hợp thành 3–4 câu |
+| Thế giới của con | 4. Meet my family | Giới thiệu người thân và sở thích |
+| Thế giới của con | 5. After school | Hoạt động và hỏi lại |
+| Thế giới của con | 6. My favourite day | Tổng hợp 4–5 câu có nối ý |
+
+Mọi bài mở để xem thử, không khóa theo điểm. Mỗi bài có tiến độ, bản thu cuối và nhận xét riêng. Giáo viên, phụ huynh và người sửa nội dung chọn bài bằng danh sách phía trên. Nội dung này do demo đề xuất, chưa được Babel duyệt. Video Babel và đánh giá tự động chưa có.

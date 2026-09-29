@@ -2,7 +2,7 @@
 
 ## Two distinct milestones
 
-**D0 — Interactive demo:** test the idea, learning journey and initial reactions. One device, one sample learner, one lesson. This is the current version.
+**D0 — Interactive demo:** test the idea, learning journey and initial reactions. One device, one sample learner, six lessons across two units. This is the current version.
 
 **P1 — Pilot MVP:** support a small group of real learners. Requires a backend, sign-in, access controls, private storage, Babel materials and a workable teacher process. This is not yet delivered.
 

@@ -10,3 +10,4 @@
 @media(max-width:1100px){.docs-layout{grid-template-columns:1fr}.docs-index{position:static;display:grid;grid-template-columns:1fr 1fr;gap:4px}.docs-index .footnote{grid-column:1/-1;margin:12px}.doc-article{padding:24px}}
 @media(max-width:620px){.nav button{flex:0 0 auto}.docs-index{grid-template-columns:1fr}.doc-article{padding:20px}.doc-article h1{font-size:1.45rem}}
 .docs-layout>*{min-width:0}.doc-article .table-wrap{max-width:100%}
+.lesson-open{width:100%;text-align:left;color:var(--ink)}.lesson-open:hover{border-color:var(--green);background:#f4faf7}.lesson-open .details{display:grid;gap:6px}.lesson-picker{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap}.lesson-picker label{font-size:.875rem;font-weight:600}.lesson-picker select{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;color:var(--ink);background:white;max-width:100%}

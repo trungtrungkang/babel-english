@@ -30,7 +30,7 @@ Discuss how many recordings a teacher could realistically review each week.
 
 Edit the goal or model dialogue in Content. Save a draft: the published lesson does not change. Publish: the version increases while old attempts remain unchanged. Start a new attempt to view the new content.
 
-The current tool edits one fixed ice-cream template; it is not a full production CMS.
+The current tool edits six predefined lessons independently; it is not a full production CMS.
 
 ## 4. Decisions — 3–5 minutes
 

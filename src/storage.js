@@ -1,12 +1,11 @@
-import { STORAGE_KEY, initialState, validateLesson } from './domain.js';
+import { STORAGE_KEY, initialState, migrateState, snapshotCurrent } from './domain.js';
 export function loadState() {
   try {
     const value = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (!value || value.schemaVersion !== 1 || validateLesson(value.lesson)) return initialState();
-    return { ...initialState(), ...value, lang: value.lang === 'en' ? 'en' : 'vi' };
+    return migrateState(value);
   } catch { return initialState(); }
 }
-export function saveState(state) { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+export function saveState(state) { localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshotCurrent(state))); }
 let database;
 function db() {
   if (!database) database = new Promise((resolve, reject) => {

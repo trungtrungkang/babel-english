@@ -28,3 +28,6 @@ Mốc xem lại:
 ```
 
 ADR-010: Tích hợp thư viện tài liệu Việt–Anh trong demo theo yêu cầu người dùng. Markdown tại docs/ và docs/en/ là nguồn; scripts/build-docs.mjs đóng gói danh sách cố định vào module public. Không mở quyền đọc tùy ý toàn bộ thư mục dự án. Khi sửa phạm vi, cập nhật cả hai ngôn ngữ và chạy npm run docs:build.
+
+
+ADR-011: Mở rộng demo thành sáu bài thuộc hai chủ đề, có bài tổng hợp sau mỗi hai bài luyện. Tiến độ, nháp, bài nộp và nhận xét lưu riêng theo ID bài; nâng dữ liệu v1 lên v2, giữ nguyên nội dung người dùng đã sửa và tham chiếu audio. Chưa bổ sung backend, AI hoặc video thật.

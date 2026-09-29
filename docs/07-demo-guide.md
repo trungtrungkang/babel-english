@@ -33,7 +33,7 @@ Thời lượng gợi ý 10–15 phút. Mục đích: xem cách học này có �
 2. Lưu nháp: nội dung học chưa đổi.
 3. Xuất bản: version tăng; bài đang học/bài cũ không bị sửa ngược.
 4. Luyện lại từ đầu sau khi đã nộp hoặc bắt đầu lượt mới để xem phiên bản mới.
-5. Lưu ý công cụ hiện chỉ sửa một mẫu, chưa thay thế CMS production.
+5. Lưu ý công cụ hiện sửa sáu bài có sẵn, chưa thay thế CMS production.
 
 ## 4. Chốt phản hồi (3–5 phút)
 

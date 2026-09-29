@@ -23,7 +23,7 @@ Máy chủ chỉ lắng nghe trên localhost và chỉ phục vụ các tài ngu
 
 ## Xem gì trong demo?
 
-1. **Góc học tập:** một học sinh minh họa, một bài “At the ice cream shop”.
+1. **Góc học tập:** một học sinh minh họa, sáu bài thuộc hai chủ đề.
 2. **Bài học:** Xem → Nghe → Nói theo → Luyện tập → Tự trả lời → Kiểm tra → Hoàn thành.
 3. **Thu âm thật:** thu, nghe lại, thu lại; nộp bản thu cuối bài vào kho trình duyệt.
 4. **Giáo viên:** xem tiến độ, nghe bài đã nộp, ghi nhận đạt mục tiêu/cần luyện và nhận xét.
@@ -31,7 +31,7 @@ Máy chủ chỉ lắng nghe trên localhost và chỉ phục vụ các tài ngu
 6. **Nội dung:** sửa bài mẫu, lưu nháp, xuất bản phiên bản mới, thêm URL video trực tiếp.
 7. **VI/EN:** chuyển ngôn ngữ giao diện; nội dung luyện nói vẫn bằng tiếng Anh.
 
-Nút “Xem thử màn hoàn thành” không nộp bài và không tạo kết quả học. Hai bài tiếp theo trên trang chủ là định hướng, chưa tương tác.
+Nút “Xem thử màn hoàn thành” không nộp bài và không tạo kết quả học. Cả sáu bài trên trang chủ đều tương tác; bài 3 và bài 6 là bài tổng hợp.
 
 ## Giới hạn quan trọng
 
@@ -39,10 +39,10 @@ Nút “Xem thử màn hoàn thành” không nộp bài và không tạo kết 
 - Chưa có video/giọng mẫu Babel. Hội thoại mẫu và speech synthesis giúp xem thử; chất lượng/khả dụng giọng đọc tùy trình duyệt và hệ điều hành.
 - Không chấm AI, không tự suy ra kỹ năng từ độ dài bản thu. Mức đạt mục tiêu do người dùng ở vai trò giáo viên chọn.
 - Tiến độ/nội dung/nhận xét lưu trong localStorage, bản thu đã nộp lưu trong IndexedDB, chỉ trên trình duyệt và origin hiện tại. Không đồng bộ sang điện thoại hoặc trình duyệt khác.
-- Bản thu luyện tập chưa nộp chỉ nằm trong bộ nhớ; chuyển bước/màn hình sẽ bỏ bản thu đó. Chỉ bản nộp cuối được giữ qua tải lại trang. Demo giữ một kết quả hiện hành, chưa có lịch sử nhiều lượt trong UI.
+- Bản thu luyện tập chưa nộp chỉ nằm trong bộ nhớ; chuyển bước/màn hình sẽ bỏ bản thu đó. Chỉ bản nộp cuối được giữ qua tải lại trang. Demo giữ một kết quả hiện hành cho mỗi bài, chưa có lịch sử nhiều lượt trong UI.
 - Cho phép đi tiếp mà không thu ở bước luyện; cần bản thu cuối bài để nộp thật. Không phát hiện bản thu im lặng trong v0.1.
 - Thu âm cần quyền micro và localhost/HTTPS. Máy chủ mặc định không mở trong mạng LAN. Khi triển khai bản chia sẻ phải dùng HTTPS và xác định phương án dữ liệu trước.
-- Công cụ nội dung chỉ sửa mẫu mua kem, chưa tạo bài tùy ý. Hoạt động đổi vị kem vẫn cố định.
+- Công cụ nội dung sửa riêng từng bài trong sáu bài có sẵn; chưa tạo dạng hoạt động tùy ý. Lựa chọn luyện tập và thử thách được thiết kế theo từng bài.
 - Google Fonts là tài nguyên ngoại mạng duy nhất mặc định; khi không tải được dùng font hệ thống. Video do người quản lý thêm có thể gọi máy chủ bên ngoài. Giọng máy có thể do hệ điều hành cung cấp; không cam kết speech synthesis luôn offline.
 - Không dùng dữ liệu hoặc giọng thật của trẻ trong buổi demo kỹ thuật. Dùng người lớn tự thử.
 

@@ -4,7 +4,7 @@ These are milestones, not delivery-date commitments. Estimate after agreeing the
 
 ## D0 — Idea demonstration
 
-Completed: project setup, living documentation, one Speaking journey, recording implementation, teacher/parent views, sample content editing, draft/version handling and VI/EN support. Project documentation is now available inside the demo in both languages.
+Completed: project setup, living documentation, six Speaking lessons, recording implementation, teacher/parent views, sample content editing, draft/version handling and VI/EN support. Project documentation is now available inside the demo in both languages.
 
 Outstanding: Vic and Châu review the demo and record at least three decisions; test the microphone and playback on the presentation device.
 
