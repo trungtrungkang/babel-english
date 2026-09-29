@@ -1,0 +1,19 @@
+{
+  "name": "babel-online",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Babel Online \u2014 local Speaking MVP for product discovery",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/app.js && node --check src/domain.js && node --check src/storage.js && node --check scripts/server.mjs && node --check src/docs-view.js && node --check src/project-docs.js",
+    "docs:build": "node scripts/build-docs.mjs",
+    "predev": "npm run docs:build",
+    "prestart": "npm run docs:build"
+  }
+}
