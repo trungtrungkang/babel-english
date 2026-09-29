@@ -77,6 +77,11 @@ Mỗi vòng: chọn một giả thuyết → sửa một nhóm thay đổi nhỏ
 
 ## Tài liệu trong ứng dụng
 
-Mở mục **Tài liệu dự án / Project docs** trong menu demo. Có đủ 9 tài liệu bằng Việt/Anh; nút VI/EN đổi nội dung tài liệu đang đọc. Có thể chia sẻ đường dẫn tài liệu trên cùng máy, ví dụ `http://localhost:4173/?doc=07-demo-guide#docs`.
+Mở mục **Tài liệu dự án / Project docs** trong menu demo. Có đủ 10 tài liệu bằng Việt/Anh; nút VI/EN đổi nội dung tài liệu đang đọc. Có thể chia sẻ đường dẫn tài liệu trên cùng máy, ví dụ `http://localhost:4173/?doc=07-demo-guide#docs`.
 
 Nguồn tiếng Việt ở `docs/`, bản English ở `docs/en/`. Sau khi sửa chạy `npm run docs:build` rồi tải lại trình duyệt. `npm run dev` và `npm start` tự đóng gói tài liệu trước khi chạy. Module `src/project-docs.js` là file sinh tự động, không sửa trực tiếp. Cả hai ngôn ngữ cần được cập nhật khi thay đổi quyết định hoặc phạm vi.
+
+
+## Vòng góp ý Châu/Vic
+
+Mở trang chủ → Dành cho Châu & Vic · Bắt đầu tại đây. Ba bài mua sắm có đóng vai, danh sách và thẻ kể chuyện; chuyển mức hỗ trợ từ mẫu sang từ khóa hoặc tự nói. Bài 4–6 chỉ là ví dụ mở rộng. Giáo viên đánh giá ba tiêu chí thủ công, không có AI nhận dạng/chấm. Thẻ hình dùng emoji/nhãn. Kịch bản hoạt động hiện ở mã nguồn, không chỉnh được trong CMS cơ bản. Dữ liệu hoạt động luyện theo từng bài được lưu và đính kèm bản nộp, nhưng không tự chứng minh học sinh đã nói đúng.

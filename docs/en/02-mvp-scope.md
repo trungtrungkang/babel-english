@@ -1,5 +1,10 @@
 # Demo and pilot scope
 
+## Current review scope
+
+Added three distinct tasks: scripted role-play, shopping lists and story cards; fading support; goals, prerequisites, evidence and classroom links. Teachers rate meaning/clarity/independence and parents see those ratings. There is no automatic assessment; self-marking is for practice only. The CMS still edits basic content, not the three activity structures. The library now contains 10 documents, starting with the Châu/Vic review page.
+
+
 ## Two distinct milestones
 
 **D0 — Interactive demo:** test the idea, learning journey and initial reactions. One device, one sample learner, six lessons across two units. This is the current version.

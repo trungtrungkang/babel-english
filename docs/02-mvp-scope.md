@@ -1,5 +1,10 @@
 # Phạm vi demo và MVP dùng thử
 
+## Phạm vi vòng góp ý hiện tại
+
+Đã bổ sung ba hoạt động riêng: đóng vai theo lượt, danh sách mua sắm và thẻ kể chuyện; gợi ý giảm dần; mục tiêu, kiến thức đầu vào, bằng chứng đạt và kết nối lớp học. Giáo viên chọn ba tiêu chí đủ ý/dễ hiểu/tự lập, phụ huynh xem được nhận xét đó. Chưa có chấm tự động; thao tác tự đánh dấu chỉ phục vụ luyện tập. CMS vẫn sửa nội dung cơ bản, chưa chỉnh được cấu trúc ba hoạt động. Thư viện hiện có 10 tài liệu, bắt đầu từ trang dành cho Châu/Vic.
+
+
 ## Hai mốc khác nhau
 
 **D0 — MVP demo:** kiểm chứng ý tưởng, luồng học và phản ứng ban đầu. Một thiết bị, một học sinh minh họa, sáu bài mẫu. Đây là phiên bản hiện tại.

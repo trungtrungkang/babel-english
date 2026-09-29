@@ -1,5 +1,10 @@
 # Nhật ký quyết định
 
+## ADR-012 — unit mẫu để thảo luận
+
+Theo yêu cầu người dùng, làm sâu ba bài mua sắm với ba hoạt động, thêm mục tiêu/rubric và trang Bắt đầu tại đây Việt–Anh. Không coi đây là duyệt chuyên môn của Châu/Vic. Chưa đổi schema nội dung sang CMS tổng quát; hoạt động UI được chọn theo ID bài. Cần phiên bản hóa hoạt động và rubric đầy đủ trước pilot.
+
+
 Các quyết định do triển khai đề xuất, chưa thay thế phê duyệt sản phẩm của Vic/Châu.
 
 | ID | Ngày | Quyết định | Lý do | Khi xem lại |

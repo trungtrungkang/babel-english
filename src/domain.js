@@ -302,7 +302,7 @@ export function advanceAttempt(attempt) {
 export function createSubmission(attempt, recording, now = new Date().toISOString()) {
   if (!recording?.size || !recording?.id) throw new Error('recording-required');
   if (attempt.step !== 5) throw new Error('assessment-required');
-  return { id: `submission-${Date.now()}`, lessonId: attempt.lessonId, lessonVersion: attempt.lessonVersion, lesson: structuredClone(attempt.lesson), recordingId: recording.id, duration: recording.duration, submittedAt: now, completion: 'submitted', mastery: 'pending', hintUsed: attempt.hintUsed };
+  return { id: `submission-${Date.now()}`, lessonId: attempt.lessonId, lessonVersion: attempt.lessonVersion, lesson: structuredClone(attempt.lesson), recordingId: recording.id, duration: recording.duration, submittedAt: now, completion: 'submitted', mastery: 'pending', hintUsed: attempt.hintUsed, practiceEvidence: structuredClone(attempt.task || null) };
 }
 export function validateLesson(lesson) {
   if (!lesson.title?.trim() || lesson.title.length > 120) return 'title';
@@ -317,4 +317,50 @@ export function validateLesson(lesson) {
 export function completionPercent(state) {
   if (state.submission) return 100;
   return state.attempt ? Math.round(state.attempt.completedSteps.length / 6 * 100) : 0;
+}
+
+// Editorial design is a review proposal, separate from published lesson language.
+export const unitDesign = {
+ 'speaking-shop-01': {
+  type:'roleplay', label:{vi:'Đóng vai mua hàng',en:'Shop role-play'},
+  canDo:{vi:'Con có thể gọi món và trả lời câu hỏi về số lượng.',en:'I can order an ice cream and answer a quantity question.'},
+  prerequisite:{vi:'Biết tên 2–3 vị kem, one/two và please/thank you.',en:'Know 2–3 flavours, one/two and please/thank you.'},
+  evidence:{vi:'Không nhìn câu mẫu: gọi món, trả lời số lượng và cảm ơn. Người nghe hiểu ý chính.',en:'Without a model: order, answer the quantity question and say thank you. The listener understands.'},
+  classroom:{vi:'Ghép đôi người bán/người mua; đổi vị kem và số lượng. Giáo viên quan sát trẻ có nghe và đáp đúng lượt không.',en:'Pair a shopkeeper and customer; change flavours and quantities. Observe whether learners listen and respond to each turn.'}
+ },
+ 'speaking-shop-02': {
+  type:'shopping',label:{vi:'Đi chợ theo danh sách',en:'Shopping-list mission'},
+  canDo:{vi:'Con có thể hỏi mua hai loại trái cây với đúng số lượng.',en:'I can ask for two kinds of fruit with the right quantities.'},
+  prerequisite:{vi:'Đã luyện yêu cầu lịch sự; biết apples/bananas/oranges và số 1–4.',en:'Have practised polite requests; know apples/bananas/oranges and numbers 1–4.'},
+  evidence:{vi:'Chỉ nhìn danh sách mới: nói đủ hai món, số lượng và lời cảm ơn. Không cần đúng một câu mẫu duy nhất.',en:'Using only a new list: request both items and quantities and give thanks. More than one wording is acceptable.'},
+  classroom:{vi:'Mỗi bạn giữ một danh sách khác nhau, thay phiên làm người bán. Hỏi lại khi nghe chưa rõ.',en:'Give partners different lists and alternate shopkeeper roles. Ask for repetition when needed.'}
+ },
+ 'speaking-shop-03': {
+  type:'story',label:{vi:'Kể chuyện theo hình',en:'Picture-supported story'},
+  canDo:{vi:'Con có thể nối 3–4 câu để kể chuyến mua sắm của mình.',en:'I can connect 3–4 sentences about my shopping trip.'},
+  prerequisite:{vi:'Đã luyện gọi món và số lượng ở bài 1–2. Biết nối ý đơn giản bằng and/then.',en:'Practised requests and quantities in lessons 1–2. Know simple links with and/then.'},
+  evidence:{vi:'Chỉ nhìn ba thẻ hình: nói nơi đến, món mua và lời yêu cầu/cảm ơn; nối ít nhất hai ý.',en:'Using three picture cards only: describe the place, purchases and a request/thanks; connect at least two ideas.'},
+  classroom:{vi:'Kể cho bạn nghe bằng thẻ hình; bạn hỏi thêm một câu. Một buổi sau đổi món hoặc địa điểm để kiểm tra vận dụng.',en:'Tell a partner using picture cards; the partner asks a follow-up. In a later lesson change items or location to check transfer.'}
+ }
+};
+export const reviewCriteria = [
+ {id:'meaning',vi:'Đủ ý theo nhiệm vụ',en:'Task meaning'},
+ {id:'clarity',vi:'Người nghe hiểu',en:'Intelligibility'},
+ {id:'independence',vi:'Mức tự lập',en:'Independence'}
+];
+export function updateTask(attempt, patch) {
+ const prior=attempt.task || {support:'model',turn:0,list:0,said:[],story:[]};
+ const task={...prior,...patch};
+ if(!['model','keywords','none'].includes(task.support)) throw new Error('invalid-support');
+ if(!Number.isInteger(task.turn)||task.turn<0||task.turn>2) throw new Error('invalid-turn');
+ if(![0,1].includes(task.list)) throw new Error('invalid-list');
+ if(!Array.isArray(task.said)||task.said.some(x=>![0,1].includes(x))||new Set(task.said).size!==task.said.length) throw new Error('invalid-tracking');
+ if(!Array.isArray(task.story)||task.story.some(x=>![0,1,2].includes(x))||new Set(task.story).size!==task.story.length) throw new Error('invalid-story');
+ return {...attempt,task,hintUsed:attempt.hintUsed || patch.support==='model' || patch.support==='keywords'};
+}
+export function buildReview(form,submissionId,now=new Date().toISOString()) {
+ const criteria=Object.fromEntries(reviewCriteria.map(c=>[c.id,form[c.id]]));
+ if(Object.values(criteria).some(x=>!['support','developing','independent'].includes(x))) throw new Error('criteria-required');
+ if(!['achieved','practice'].includes(form.mastery)||!form.comment?.trim()) throw new Error('review-required');
+ return {mastery:form.mastery,comment:form.comment.trim(),criteria,submissionId,reviewedAt:now};
 }

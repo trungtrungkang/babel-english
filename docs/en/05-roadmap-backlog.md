@@ -1,5 +1,10 @@
 # Roadmap and backlog
 
+## Priorities around the review meeting
+
+Current iteration: one shopping unit with three activity types and bilingual decision-support documents. Next: Châu/Vic pedagogical review → select a real unit → prepare materials/rubric → consented trial → revise → expand production. Do not add lessons, AI, gamification or a backend merely for the review meeting.
+
+
 These are milestones, not delivery-date commitments. Estimate after agreeing the team, materials and scope.
 
 ## D0 — Idea demonstration

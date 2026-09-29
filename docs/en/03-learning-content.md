@@ -1,77 +1,57 @@
 # Learning and content design
 
-## Sample lesson
+## Editorial status
 
-ID: speaking-shop-01. Assumed age: 8–11. Topic: buying ice cream. Observable goal: independently make a polite order that a listener can understand.
+The shopping unit is a proposal for Châu and Vic to review before selecting real Babel materials. The other three lessons illustrate expansion. Do not assign CEFR levels or treat these six lessons as an approved curriculum.
 
-| Stage | Task | Support | Evidence |
+## Proposed unit outcome
+
+Using a menu/list without a model answer, learners can make a request, state quantities and connect 3–4 sentences about shopping. Classroom work must additionally check listening to a partner and asking for clarification; solo recordings do not replace interaction.
+
+Assumed prerequisites: familiar food/fruit names, numbers 1–4, please/thank you and simple sentences. Add preparation or reduce difficulty if the actual group does not have these foundations.
+
+## Three-lesson map
+
+| Lesson | I can | Main activity | Support | Final evidence |
+|---|---|---|---|---|
+| Ice cream shop | Order and answer a quantity question | Choose a flavour and respond to three shopkeeper turns | Model → keywords → no hints | One recording with request, quantity and thanks |
+| Fruit market | Request two fruits with quantities | Follow a list and self-mark spoken items | Model → keywords → list only | Request the assessment-list items |
+| Shopping trip | Connect 3–4 shopping sentences | Choose an order for three picture cards and tell a story | Model on cards → keywords → pictures/labels only | Place, purchases, a request/thanks and linked ideas |
+
+There is no speech recognition. Learners control turn changes and spoken ticks. Story cards have no single correct order; assess the spoken result. Emoji and short labels stand in for finished artwork and have not been tested with emerging readers.
+
+## Progression and assessment limits
+
+Lesson 1 practises requests and responses. Lesson 2 reuses requests while adding quantities and multiple items. Lesson 3 connects ideas. Avoid increasing every source of difficulty at once.
+
+The demo retains six navigation stages but changes Practise, Answer and the final task. The approved curriculum may use discovery, practice, interaction, application or review sessions without requiring all six stages every time.
+
+Lesson 2’s assessment list is four oranges and one apple. Learners can also select this list during practice, so it is not guaranteed to be unseen. The pilot needs equivalent variants and delayed review tasks.
+
+## Proposed rubric implemented in the demo
+
+Teachers choose needs support / developing / independent for each criterion, then give an overall judgement and a specific comment. There is no automatic total or mastery inference from completed steps.
+
+| Criterion | Needs support | Developing | Independent |
 |---|---|---|---|
-| Watch | Understand the situation | Video or sample dialogue | No proficiency judgement |
-| Listen | Hear each turn | Full text and model voice | No proficiency judgement |
-| Repeat | Repeat a request | Full model | Temporary practice recording |
-| Practise | Change the flavour | Sentence frame | Supported use |
-| Answer | Respond to Bo | Optional hint | Track hint use |
-| Check | Place an order independently | No answer text | Final teacher-review recording |
-| Complete | Acknowledge submission | Feedback after review | Completion separate from mastery |
+| Task meaning | Missing key meaning; needs modelling | Most meaning communicated, some prompting | Communicates the task’s key ideas |
+| Intelligibility | Frequent guessing or clarification needed | Generally understood with some unclear parts | Main meaning readily understood; no native-accent requirement |
+| Independence | Full models or adult step-by-step guidance | Some keywords or prompts | Uses pictures/lists without model answers |
 
-Synthetic speech tests functionality only. Natural pronunciation, stress and intonation need approved Babel models.
+Vic and Châu should adapt these descriptors for the selected learners. Self-marking “spoken” is not evidence of accuracy or independence. Old overall-only feedback remains unchanged; missing criterion ratings are not fabricated.
 
-## Proposed pilot rubric
+## Classroom connection and review
 
-Not yet agreed. Rate each criterion as needs support / developing / independent:
+After lesson 1, alternate customer/shopkeeper roles. After lesson 2, give partners different lists and practise asking for repetition. After lesson 3, tell a partner who asks a follow-up. In a later lesson change items or location to check recall and transfer. This is teacher guidance, not an implemented automatic review scheduler.
 
-1. Meaning: understands the question and orders the intended item.
-2. Intelligibility: understandable without excessive guessing; a native accent is not required.
-3. Fluency: appropriate chunks and pauses for the level.
-4. Stress and intonation: focus on features taught in this lesson.
-5. Independence: succeeds with reduced support and changed details.
+## Editorial record for each lesson
 
-Version 0.1 has only an overall achieved/needs-practice choice and a free-text comment. A multi-criterion rubric belongs to P1.
+Separate age and proficiency; prerequisites; I-can goal; performance conditions; target language/pronunciation; listening/visual script; spoken task; scaffolding and fading; acceptable answers; rubric; earlier/later lesson links; classroom task; media rights; reviewer and version.
 
-## Preparing Babel materials
+Target model: Programme → Level → Unit → Lesson → Activity. Reuse assets across activities. Role-play, list and story interactions are currently UI code selected by lesson ID, not a general authoring system. Validate the design before investing in that CMS.
 
-For each lesson provide a stable ID, title, suitable age range, level, goals, skills, target language, media, transcript, model answers, prompts, acceptable responses, hints, rubric, completion conditions, author/reviewer, media rights and version.
+## Authoring and approval
 
-Age and level are separate fields. Titles are not identifiers.
+Choose the outcome → design final evidence → identify prerequisites → select activities/support → author materials → pedagogical review → consented small-group trial → revise → expand to further units.
 
-## Target content model
-
-Programme → Level → Unit → Lesson → Activity.
-
-An activity includes type, skill tags, goal IDs, VI/EN instructions, media references, prompt, response type, scaffolding and assessment policy. Initial types: video, listen-repeat, substitution, prompted-response and speaking-assessment. Later types: listening-choice, vocabulary-recall, reading-response and writing-response.
-
-Reuse a video across activities. Link assessment evidence to skill goals, not just lessons.
-
-Example target data, not the implemented schema:
-
-```json
-{
-  "id": "shop-order-independent",
-  "type": "prompted-response",
-  "skillTags": ["speaking"],
-  "objectiveIds": ["order-food-politely"],
-  "instructions": {"vi": "Gọi món con muốn.", "en": "Order what you would like."},
-  "responseType": "audio",
-  "assessmentPolicy": {"reviewer": "teacher", "rubricId": "speaking-beginner-v1"}
-}
-```
-
-## Authoring process
-
-Choose a goal → select an activity template → add materials → preview as a learner → pedagogical review → publish a version → observe difficulties → revise in a new draft.
-
-Assignments and submissions retain the relevant content and rubric versions. New edits must not reinterpret old results.
-
-
-## Expanded sample programme — six lessons
-
-| Unit | Lesson | Goal |
-|---|---|---|
-| Let’s go shopping | 1. At the ice cream shop | Make a polite request |
-| Let’s go shopping | 2. At the fruit market | Include quantities in requests |
-| Let’s go shopping | 3. My little shopping trip | Combine language into 3–4 sentences |
-| My world | 4. Meet my family | Introduce a person and their interests |
-| My world | 5. After school | Describe an activity and ask a follow-up |
-| My world | 6. My favourite day | Connect ideas in a 4–5 sentence talk |
-
-All lessons are open for exploration without score gates. Each has separate progress, a final recording and feedback. Teachers, parents and content editors use the lesson selector above their view. These are proposed sample materials awaiting Babel approval. Babel videos and automated assessment are not included.
+Do not mass-produce videos or fix lesson durations before trialling. Sample content and synthetic speech only demonstrate the flow. Edited language and old submissions are retained; the new demonstration activities are a separate UI layer without independent versioning. Fully snapshot activity definitions before P1.

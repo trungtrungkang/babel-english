@@ -1,5 +1,10 @@
 # Roadmap và backlog
 
+## Ưu tiên trước và sau buổi gặp
+
+Vòng hiện tại: một unit mua sắm với ba dạng hoạt động và tài liệu song ngữ phục vụ quyết định. Bước kế: Châu/Vic xác nhận chuyên môn → chọn unit thật → chuẩn hóa học liệu/rubric → thử có đồng thuận → điều chỉnh → mới mở rộng sản xuất. Chưa tăng số bài, AI, gamification hoặc backend chỉ để phục vụ buổi góp ý.
+
+
 Không coi mốc dưới đây là cam kết ngày giao. Chỉ ước lượng sau khi chốt người làm, học liệu và scope.
 
 ## D0 — Demo ý tưởng (hiện tại)

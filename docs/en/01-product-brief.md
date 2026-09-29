@@ -1,5 +1,10 @@
 # Product brief — Babel Online
 
+## Pre-authoring review
+
+Known requirements: classroom support, Speaking first, four roles, VI/EN and future skills. Assumptions: ages 8–11, the Explorers 1 label, durations and specific language. Awaiting Babel: first audience, unit outcome, materials, rubric and teacher time. Shopping is the detailed discussion unit; lessons 4–6 are expansion examples, not an approved curriculum.
+
+
 Status: initial proposal for Vic and Châu to review. Created 29 September 2026.
 
 ## Vision

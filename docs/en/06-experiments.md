@@ -1,5 +1,10 @@
 # Experiments and feedback log
 
+## Meeting decision record
+
+For each item record: lesson/activity; keep/change/remove; evidence or reason; unknowns; confirming person; action owner; next test and review date. Leave approval and outcomes blank before the meeting. Observe task comprehension, actual speaking, support needed and whether teachers have enough evidence to review.
+
+
 ## Method
 
 Test one main hypothesis per iteration. Observe before explaining. A small sample finds usability problems and needs; it does not prove programme effectiveness. The criteria below are proposals, not approved targets or measured results.

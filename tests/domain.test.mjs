@@ -76,3 +76,29 @@ test('all six lessons have valid distinct content, practice choices and bilingua
  for(const lesson of seedLessons){assert.equal(validateLesson(lesson),null);assert.ok(lesson.challenge.vi&&lesson.challenge.en&&lesson.focus.vi&&lesson.focus.en);for(const choice of lesson.practice.choices){const sentence=practiceSentence(lesson,choice);assert.ok(sentence.includes(choice));assert.ok(!sentence.includes('{choice}'));}}
  assert.equal(seedLessons.filter(l=>l.review).length,2);
 });
+
+import { updateTask, buildReview, unitDesign } from '../src/domain.js';
+test('task choices persist separately and submitted evidence is immutable',()=>{
+ let state=initialState(); state.attempt=updateTask(newAttempt(state.lesson),{support:'keywords',turn:2});
+ state=selectLesson(state,seedLessons[2].id);state.attempt=updateTask(newAttempt(state.lesson),{story:[2,0,1],support:'none'});
+ state.attempt.step=5;const submission=createSubmission(state.attempt,{id:'story-audio',size:20,duration:4});
+ state.attempt.task.story.reverse();assert.deepEqual(submission.practiceEvidence.story,[2,0,1]);
+ state=selectLesson(state,seedLessons[0].id);assert.equal(state.attempt.task.turn,2);assert.equal(state.attempt.task.support,'keywords');
+ assert.equal(state.submission,null);assert.equal(state.feedback,null);
+});
+test('self-tracking does not imply submission or achievement',()=>{
+ const state=initialState();state.attempt=updateTask(newAttempt(seedLessons[1]),{said:[0,1]});
+ assert.equal(completionPercent(state),0);assert.equal(state.submission,null);assert.equal(state.feedback,null);
+ assert.throws(()=>updateTask(state.attempt,{story:[0,0]}),/invalid-story/);
+ assert.throws(()=>updateTask(state.attempt,{support:'automatic'}),/invalid-support/);
+});
+test('teacher review requires all three explicit criteria',()=>{
+ assert.throws(()=>buildReview({mastery:'achieved',comment:'Good'},'s1'),/criteria-required/);
+ const review=buildReview({mastery:'practice',comment:' Clear words; try without the model. ',meaning:'independent',clarity:'developing',independence:'support'},'s1');
+ assert.equal(review.mastery,'practice');assert.equal(review.criteria.independence,'support');assert.equal(review.submissionId,'s1');
+ assert.equal(review.comment,'Clear words; try without the model.');
+});
+test('only the three review-unit lessons have detailed editorial designs',()=>{
+ assert.deepEqual(Object.values(unitDesign).map(d=>d.type),['roleplay','shopping','story']);
+ for(const d of Object.values(unitDesign))for(const key of ['label','canDo','prerequisite','evidence','classroom']) assert.ok(d[key].vi && d[key].en);
+});

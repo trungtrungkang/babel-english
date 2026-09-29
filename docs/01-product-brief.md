@@ -1,5 +1,10 @@
 # Product brief — Babel Online
 
+## Buổi góp ý trước khi biên tập chính thức
+
+Yêu cầu đã biết: bổ trợ lớp học, Speaking trước, bốn vai trò, Việt–Anh, mở rộng nhiều kỹ năng. Giả định: nhóm 8–11 tuổi, tên Explorers 1, thời lượng và ngôn ngữ cụ thể. Chờ Babel xác nhận: nhóm đầu tiên, mục tiêu unit, học liệu, rubric và thời gian giáo viên. Unit mua sắm được làm sâu để thảo luận; bài 4–6 là ví dụ mở rộng, không phải giáo trình đã duyệt.
+
+
 Status: đề xuất ban đầu, chờ Vic/Châu phản hồi. Cập nhật 29/09/2026.
 
 ## Tầm nhìn

@@ -1,5 +1,10 @@
 # Kế hoạch thử nghiệm và nhật ký phản hồi
 
+## Mẫu ghi quyết định tại buổi gặp
+
+Mỗi mục ghi: bài/hoạt động; giữ/sửa/bỏ; bằng chứng hoặc lý do; điều chưa biết; người xác nhận; người thực hiện; bước thử tiếp và ngày xem lại. Trước khi gặp, để trống người xác nhận và kết quả. Ưu tiên quan sát: có hiểu nhiệm vụ không, có nói thật không, còn cần bao nhiêu gợi ý và giáo viên có đủ bằng chứng để nhận xét không.
+
+
 ## Cách làm
 
 Mỗi vòng chọn một giả thuyết chính. Quan sát trước, giải thích sau; không hướng dẫn mọi bước rồi kết luận giao diện dễ dùng. Mẫu nhỏ nhằm tìm lỗi/hiểu nhu cầu, không chứng minh hiệu quả toàn bộ chương trình.

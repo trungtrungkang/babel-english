@@ -1,47 +1,29 @@
-# Demonstration guide for Vic and Châu
+# Demonstration guide for Châu and Vic
 
-Allow 10–15 minutes. Aim: decide whether the approach fits Babel and merits a pilot.
+## Prepare
 
-## Preparation
+Open Start here in Project docs; Vic can select EN. Run npm run dev if the local server is stopped. Allow 10–15 minutes and use an adult for recording. Progress, content and feedback remain in this browser only.
 
-Run npm run dev and open http://localhost:4173 on this computer. Use an adult and sample data. Check speakers and microphone before the meeting.
+## 1. Frame the meeting — 1 minute
 
-If the embedded browser does not handle audio well, use Chrome or Safari on the same computer. Data does not transfer between browsers. Content → Reset demo data clears local demo work after confirmation.
+Review the learning approach and operations, not an approved curriculum. Age, level label, duration and language choices are assumptions. AI scoring, Babel videos and real sign-in are not included.
 
-Explain upfront: no Babel video yet, no real sign-in, no AI assessment and no cross-device synchronisation.
+## 2. Three experiences — 6 minutes
 
-## 1. Learner journey — about 5 minutes
+- **Lesson 1:** open Practise, listen to Bo and respond. Move turns manually and compare full models, keywords and no hints. Ask whether the instructions are clear and whether “scoops” needs teaching first.
+- **Lesson 2:** use the list to request items, self-mark spoken turns and change lists. Ask whether fruit names/quantities are already known and whether the list provides sufficient support.
+- **Lesson 3:** select a card sequence and tell the story with progressively less help. Ask whether 3–4 sentences are appropriate and where linking words should be prepared.
 
-1. Open My learning: the child sees one clear task.
-2. Start the mission and explore the situation/dialogue. Explain that synthetic speech is a temporary model.
-3. Listen and Repeat: hear a line, record and replay if the microphone is available.
-4. Practise: choose strawberry and see the changed sentence.
-5. Answer: try without the model, then reveal a hint if needed.
-6. Check: record a complete answer, stop, replay and submit.
-7. Alternatively, preview completion without a microphone. This creates no submission; an empty teacher queue is correct.
+Skip initial stages if needed to reach the new activities. Use Practise again after an existing submission. Spoken ticks, card order and turn changes are not proficiency judgements; Continue remains available for exploration.
 
-## 2. Teacher–parent loop — about 3 minutes
+## 3. Teacher and parent — 3 minutes
 
-After a real submission, open Teacher, play the recording and choose achieved or needs practice. Write one strength and one next step, then save. Open Parent to see the same recording and feedback.
+If testing the microphone, record and submit at Check. Open Teacher, select the lesson, listen, rate three criteria and write one strength/next step. Open Parent to see the feedback. A disabled assessment form without a submission is expected.
 
-Discuss how many recordings a teacher could realistically review each week.
-
-## 3. Content management — about 2 minutes
-
-Edit the goal or model dialogue in Content. Save a draft: the published lesson does not change. Publish: the version increases while old attempts remain unchanged. Start a new attempt to view the new content.
-
-The current tool edits six predefined lessons independently; it is not a full production CMS.
+Read Classroom connection and discuss whether the suggested activity fits the next classroom lesson and available time.
 
 ## 4. Decisions — 3–5 minutes
 
-- What matches or differs from Babel’s current teaching?
-- Where would children need adult help?
-- What evidence shows a child can speak independently?
-- What are the three most important changes before a child trial?
-- Which age group/level and 3–5 real lessons should go next?
+Agree the first group, unit outcome, source materials, rubric and operational owner/time. Record keep/change/remove and reasons for each experience. “Looks good” is not evidence of learning effectiveness.
 
-Record keep/change/remove decisions in the experiments and decision logs, rather than only asking whether the demo looks good.
-
-## Avoid overclaiming
-
-Do not claim accurate AI scoring of children, multi-class scale, full offline support or proven learning outcomes. The demo demonstrates a basic interaction model; pedagogy and operations require a pilot.
+Use the Experiments template. After the meeting select a real Babel unit for authoring and a consented learner trial.

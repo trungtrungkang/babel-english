@@ -1,5 +1,10 @@
 # Decision log
 
+## ADR-012 — a unit for review
+
+At the user’s request, deepen three shopping lessons with distinct tasks, goals/rubric and a bilingual Start here page. This does not imply Châu/Vic approval. Activity UI is still selected by lesson ID rather than a general CMS schema. Fully version activities and rubrics before the pilot.
+
+
 These implementation proposals do not replace Vic and Châu’s product approval. Initial decisions: 29 September 2026.
 
 | ID | Decision | Reason | Revisit |
